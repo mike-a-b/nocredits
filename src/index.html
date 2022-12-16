@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Forum">
+    <link rel="stylesheet" href="scss/styles.scss">
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row header">
+        <div class="col-md-2">
+            <div class="logo"></div>
+        </div>
+        <div class="col-md-10">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Обо мне</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Статьи</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Вопросы юристу</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Выигранные дела</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 right-list">
+                            <li class="nav-item">
+                                <a class="nav-link tel" href="tel:79190088811">8(919) 008 88 11</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row article">
+        <div class="col-md-6">
+            <div class="speech1">Избавлю от долгов<br>и микрозаймов</div>
+            <div class="article__left__list">
+                <ul >
+                    <li>Работаю по всей России</li>
+                    <li>Даю гарантии в договоре</li>
+                    <li>Беру на себя общение с приставами</li>
+                    <li>Гибкие условия оплаты</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class=" col-md-4 col-xs-4">
+                    <button class="btn button-consult">Бесплатная консультация</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="right">
+                <div class="article__right-image">
+                    <img class="article__right-image__woman" src="./images/woman.png" alt="">
+                    <img class="article__right-image__emblem" src="./images/emblem.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid article2">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4">
+                <img class="article2__left-image" src="images/woman2.png" alt="" >
+            </div>
+            <div class="col-md-7 right">
+                <h3>Обо мне</h3>
+                <h1>ДОРОГИЕ ДРУЗЬЯ,<br>ДАВАЙТЕ ЗНАКОМИТЬСЯ!</h1>
+                <P>Меня зовут Андрей Борисович. За 20 лет юридической практики наработан большой опыт в подготовке всех видов процессуальных документов, выработке правовой позиции, представительстве интересов в суде. Интересы клиентов представляются как в судах общей юрисдикции,
+                    так и в арбитражных. Работа ведется как с гражданами, так
+                    и с юридическими лицами. Имеется опыт ведения дел в контролирующих органах.
+                    <br>В 1999 г. закончил Тверской государственный университет по специальности юриспруденция.
+                </P>
+                <div class="article2__description">
+                    <div class="article2__left-description">20+
+                        <p>лет юридической<br>практики</p>
+                    </div>
+                    <div class="article2__right-description">50
+                        <p>выигранных<br>споров</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container article2__footer">
+        <div class="row">
+            <div class="col">
+                <h1>Плюсы и минусы банкротства</h1>
+                <button id="btn1" type="button" class="btn btn-primary " onclick="btn1onclick">Судебное банкротство</button>
+                <button id="btn2" type="button" class="btn btn-primary unchecked" onclick="btn2onclick()">Банкротство через МФЦ</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul class="article2__footer__plus-list">
+                    <li>Полное освобождение от долгов</li>
+                    <li>Снятие ареста с имущества (которое наложили
+                        до банкротства)</li>
+                    <li>Единственное жилье сохраняется (в реализации)</li>
+                    <li>Сохраняется все имущество (в реструктуризации)</li>
+                    <li>Снимается запрет на выезд за границу</li>
+                    <li>Кредиторы и коллекторы не имеют права беспокоить</li>
+                    <li>Долги по кредитам, ипотеке, налогам списываются</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="article2__footer__minus-list">
+                    <li>Стоит от 50 тысяч рублей и больше </li>
+                    <li>Может длиться до 3 лет (реструктуризация)</li>
+                    <li>Залоговое имущество реализуется, даже если<br></be> жилье единственное (реализация)</li>
+                    <li>Кредитная история испорчена (но из-за самих долгов)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
