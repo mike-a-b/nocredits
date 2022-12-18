@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <link rel="stylesheet" href="scss/styles.scss">
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal__question">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modal__question" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                <h5 class="modal-title" id="exampleModalLabel">Задать вопрос</h5>
+                <div class="form-control">
+                    <label for="#yourname">Имя</label>
+                    <input id="#yourname" type="text" placeholder="Ваше имя">
+                </div>
+                <div class="form-control">
+                    <label for="#youremail">Email</label>
+                    <input id="#youremail" type="text" placeholder="Ваш email">
+                </div>
+                <div class="form-control">
+                    <label for="#yourquestion">Ваш вопрос</label>
+                    <input id="#yourquestion" type="text" placeholder="Опишите ситуацию">
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Отправить</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -6,7 +6,6 @@
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
-
 @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/images";
 @import "~bootstrap/scss/containers";
@@ -463,6 +462,7 @@ p {
   }
   .faq__question__textarea {
    background-color: white;
+   color:#8C8C8D;
    resize: none;
    border: none;
    width:480px;
@@ -495,6 +495,7 @@ p {
   color:#1A1A1B;
   margin-bottom:52px;
  }
+
  .results__item {
   box-sizing: border-box;
   background:#fff;
@@ -504,14 +505,322 @@ p {
   width:33%;
   box-shadow: 0px 4px 224px -11px rgba(26, 26, 27, 0.04);
   border-radius: 15px;
+  h2 {
+   margin:1rem 0rem;
+  }
  }
+
  .results__item:nth-child(3) {
   margin-right:0;
  }
+ .results__price{
+  margin-top:120px;
+  h1{
+
+  }
+  h4{
+   margin-top:1.5rem;
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 125%;
+   color: #2C4D84;
+  }
+  ul {
+   list-style-type: none;
+   font-size:18px;
+   color:#495057;
+   font-weight: 500;
+   font-family: Gilroy,Serif;
+  }
+  ul li:nth-child(1) {
+   padding-left: 3rem;
+   background-image: url('../images/first_icon.png');
+   background-position: 0 0;
+   background-size: 34px 34px;
+   background-repeat: no-repeat;
+   margin-top:14px;
+  }
+  ul li:nth-child(2) {
+   padding-left: 3rem;
+   background-image: url('../images/second_icon.png');
+   background-position: 0 0;
+   background-size: 34px 34px;
+   background-repeat: no-repeat;
+   margin-top:14px;
+  }
+  ul li:nth-child(3) {
+   padding-left: 3rem;
+   background-image: url('../images/third_icon.png');
+   background-position: 0 0;
+   background-size: 34px 34px;
+   background-repeat: no-repeat;
+   margin-top:14px;
+  }
+
+ }
+}
+.container.wait-call {
+ margin-top: 80px;
+ background:#2C4D84;
+ color: #2C4D84;
+ width: 100%;
+ height:304px;
+ padding:42px 52px;
+ color:#fff;
+ .col {
+  padding:0;
+ }
+ h3 {
+  font-family: Forum,Serif;
+  font-size: 38px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: white;
+  text-transform: uppercase;
+ }
+ p {
+  font-family: Gilroy, sans-serif;
+  font-size: 18px;
+  margin-bottom:  20px;
+  color:white;
+ }
+ form {
+  width:100%;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  height: auto;
+  input {
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   background: transparent;
+   border-radius: 11px;
+   color: rgba(255, 255, 255, 0.5);
+   padding:16px 32px;
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+  }
+  input:nth-child(4) {
+   color: #2C4D84;
+   font-size: 20px;
+   font-family: Gilroy, sans-serif;
+   font-weight: 500;
+   border: 1px solid rgba(255, 255, 255, 1);
+   background: #fff;
+   padding:16px 40px;
+  }
+ }
+}
+.container.readyworks {
+ margin-top: 72px;
+ .readyworks__header{
+  display: flex;
+  margin-bottom: 3rem;
+  width:100%;
+  flex-direction: row;
+  h3 {
+   font-family: Forum,Serif;
+   font-size: 38px;
+   font-weight: 400;
+   color: #1A1A1B;
+   text-transform: uppercase;
+  }
+ }
+ .readyworks__header__right{
+  display: flex;
+  justify-content: end;
+  align-content: flex-end;
+ }
+ //img {
+ // width:42px;
+ // height: 42px;
+ // margin-left: 1rem;
+ //}
+
+ .readyworks__block {
+  background: white;
+  max-width:455px;
+  box-sizing: border-box;
+  padding: 36px 42px;
+  gap: 32px;
+  width:100%;
+  max-height: 249px;
+  border-radius: 15px;
+  margin-right: 10px;
+  h4{
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 125%;
+   color: #495057;
+   margin-bottom: 40px;
+  }
+ }
+ .readyworks__block__summa, .readyworks__block__duration {
+  display: inline-block;
+  text-align: left;
+ }
+ .readyworks__block__summa {
+  img {
+   width: 24px;
+   height: 20px;
+  }
+ }
+ .readyworks__block__duration {
+  margin-left: 3rem;
+  img {
+   height: 20px;
+   width: 20px;
+  }
+
+  margin-bottom: 1rem;
+ }
+ p {
+  margin-left: 1.5rem;
+ }
+ .rw {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin-bottom: 72px;
+ }
+ a {
+  text-decoration: none;
+ }
+}
+.container-fluid.video {
+ background: #fff;
+ h1{
+  margin-top: 80px;
+  margin-bottom: 52px;
+ }
+ .video__item{
+  padding: 28px;
+  width: 378px;
+  height: 220px;
+  background: #F3F3F6;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  margin-right: 24px;
+ }
+ .video__endarticle {
+  margin-top:120px;
+  .row {
+   padding-bottom: 140px;
+  }
+  img {
+   max-width:400px;
+   max-height: 484px;
+   width: 100%;
+   height: auto;
+  }
+  input {
+   margin-top: 51px;
+   font-size: 20px;
+   font-family: Gilroy, sans-serif;
+   font-weight: 500;
+   color:#fff;
+   padding:20px 36px;
+   border-radius: 11px;
+  }
+  .video__endarticle__rightcolumn {
+   padding-left: 80px;
+   box-sizing: border-box;
+   h6 {
+    font-size: 22px;
+    font-family: Gilroy, sans-serif;
+    color: #2C4D84;
+    font-weight: 400;
+   }
+   h1 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+   }
+   p {
+    font-family: 'Gilroy', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #495057;
+   }
+  }
+ }
+}
+.container-fluid.footer {
+ background: #0F2953;
+ color:#fff;
+ height: 371px;
+ .container {
+  padding: 42px 0;
+  .footer__logo {
+   width: 68px;
+   height: 64px;
+   margin: 0;
+   padding: 0;
+  }
+  .footer__menu {
+   list-style-type: none;
+   display: flex;
+   flex-direction: row;
+   align-content: stretch;
+   justify-content: space-between;
+   padding: 32px 0 28px;
+   width:60%;
+   li {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #FFFFFF;
+   }
+  }
+  hr {
+   background: rgba(255, 255, 255, 0.15);
+   max-width: 780px;
+  }
+
+  p {
+   max-width: 780px;
+   max-height: 85px;
+   font-family: 'Gilroy', Serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 130%;
+   color: #F3F3F6;
+   margin: 0;
+   padding: 0;
+  }
+  p:nth-child(1) {
+   margin-bottom: 1rem;
+  }
+  .footer__contacts {
+   h6 {
+    font-size: 22px;
+    font-family: Gilroy, sans-serif;
+    color: #fff;
+    font-weight: 400;
+   }
+   p:nth-child(1) {
+
+   }
+   p:nth-child(1) {
+    margin-top: 3rem;
+   }
+  }
+ }
+
 }
 $navbar-light-color:                rgba($black, .55);
 $navbar-light-hover-color:          rgba($black, .7);
 $navbar-light-active-color:         rgba($black, .9);
 $navbar-light-disabled-color:       rgba($black, .3);
-
+@import "modal";
 //colors of primary second
