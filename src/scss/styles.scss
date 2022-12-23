@@ -118,9 +118,9 @@ p {
  .nav-link:hover {
   text-decoration: underline;
  }
- .right-list {
+ ul.right-list {
   width:430px;
-  margin-right: 0;
+  margin-right: 0!important;
   .nav-item {
    flex-basis:150px;
    flex-grow: 2;
@@ -461,6 +461,10 @@ p {
   font-size: 20px;
   line-height: 125%;
   text-decoration:none;
+  img {
+   margin-left:10px;
+   padding-bottom: 5px;
+  }
   &:hover {
    text-decoration: none;
   }
@@ -470,20 +474,40 @@ p {
    height: 21px;
    position:relative;
    left:0;top:0;
-   background: url("../images/readall__arrow.png");
+   //background: url("../images/readall__arrow.png");
    background-size: 21px 20px;
   }
  }
- .faq__readall a::after {
-  content: '';
-  position:relative;
-  left:0;
-  top:0;
-  width:21px;
-  height: 20px;
-  background: url("../images/readall__arrow.png") 21px 20px no-repeat;
-
+ .faq__read20 {
+  font-size: 18px;
  }
+ //questions and answers right enumeration
+ .faq__read-page {
+  margin-top: 2.6rem;
+  justify-content: flex-end;
+  display: inline-flex;
+  width: 100%;
+  flex-direction: row;
+  gap:8px;
+  color:#2C4D84;
+  a {
+   text-decoration: none;
+  }
+  .faq__read-page__lefticon {
+   margin-right: 0.8rem;
+  }
+  .faq__read-page__righticon {
+   margin-left: 0.8rem;
+  }
+  .faq__read-page__current-page {
+   width: 24px;
+   height: 24px;
+   background: #fff;
+   border-radius:12px;
+   text-align: center;
+  }
+ }
+
  .faq__question {
   form > div {
    display: flex;
@@ -607,6 +631,7 @@ p {
 }
 .container.wait-call {
  margin-top: 80px;
+ margin-bottom: 72px;
  background:#2C4D84;
  color: #2C4D84;
  width: 100%;
@@ -659,7 +684,7 @@ p {
  }
 }
 .container.readyworks {
- margin-top: 72px;
+
  .readyworks__header{
   display: flex;
   margin-bottom: 3rem;
