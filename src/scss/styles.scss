@@ -63,7 +63,7 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 $body-color: #333;
 $body-bg: #fff;
 $border-radius: .4rem;
-$success: #7952b3;
+$success: green;
 
 //@import "icon-list";
 
@@ -119,11 +119,14 @@ p {
   text-decoration: underline;
  }
  .right-list {
- width:430px;
-
+  width:430px;
+  margin-right: 0;
   .nav-item {
    flex-basis:150px;
    flex-grow: 2;
+    a {
+     text-align: right;
+    }
   }
  }
 }
@@ -349,9 +352,9 @@ p {
  h1 {
   padding-top:1.5rem;
  }
- .faq-names {
+ .faq__names {
   margin-top:42px;
-  margin-bottom:50px;
+  margin-bottom:2rem;
  }
  p {
   margin-bottom: 2.25rem;
@@ -408,7 +411,7 @@ p {
   background: #fff;
   box-shadow: 0px 7px 60px -11px rgba(26, 26, 27, 0.09);
   border-radius: 12px;
-  z-index: 15;
+  //z-index: 15;
   max-width:578px;
   max-height: 201px;
   width:100%;
