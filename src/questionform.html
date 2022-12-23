@@ -10,7 +10,7 @@
 <body>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal__question">
-    Launch demo modal
+    Показать мадальное окно
 </button>
 
 <!-- Modal -->
@@ -19,16 +19,30 @@
         <div class="modal-content">
                 <h5 class="modal-title" id="exampleModalLabel">Задать вопрос</h5>
                 <div class="form-control">
-                    <label for="#yourname">Имя</label>
-                    <input id="#yourname" type="text" placeholder="Ваше имя">
+                    <label for="#modal__question__yourname">Имя</label>
+                    <input id="#modal__question__yourname" type="text" placeholder="Ваше имя">
                 </div>
                 <div class="form-control">
-                    <label for="#youremail">Email</label>
-                    <input id="#youremail" type="text" placeholder="Ваш email">
+                    <label for="#modal__question__youremail">Email</label>
+                    <input id="#modal__question__youremail" type="text" placeholder="Ваш email">
+                </div>
+                <div class="form-control tel2">
+                    <div>
+                        <label class="modal__question__label" for="modal__question__telprefix"></label>
+                        <input id="modal__question__telprefix" type="text" placeholder="+7">
+                    </div>
+                    <label for="#modal__question__yourphone">Телефон</label>
+                    <input id="#modal__question__yourphone" type="text" placeholder="Ваш телефон">
                 </div>
                 <div class="form-control">
                     <label for="#yourquestion">Ваш вопрос</label>
                     <input id="#yourquestion" type="text" placeholder="Опишите ситуацию">
+                </div>
+                <div class=" policy">
+                    <input id="modal__question__checkbox" type="checkbox">
+                    <label id="labelcheckbox" for="modal__question__checkbox">
+                        Я принимаю условия Политики конфиденциальности
+                    </label>
                 </div>
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Отправить</button>
         </div>
